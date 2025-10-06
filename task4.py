@@ -13,15 +13,17 @@
 # z = 130
 # Ответ:
 # Наибольшее число 130
-x= int(input('Input x='))
-y = int(input('Input y='))
-z = int(input('Input z='))
+
+x = int(input("Input x="))
+y = int(input("Input y="))
+z = int(input("Input z="))
 if x > y and x > z:
     maximum = x
 elif y > z:
     maximum = y
 else:
     maximum = z
-print('Ответ:\nНаибольшее число:', maximum)
+print("Ответ:\nНаибольшее число:", maximum)
+
 # Задачу решить без функций max и прочих.
 # Значение переменных может меняться
