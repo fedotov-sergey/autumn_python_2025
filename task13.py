@@ -34,6 +34,8 @@ match year % 10:
     case 8 | 9:
         color_year = "yellow"
 match year % 12:
+    case 0:
+        animal = "monkey"
     case 1:
         animal = "cock"
     case 2:
@@ -56,6 +58,4 @@ match year % 12:
         animal = "horse"
     case 11:
         animal = "goat"
-    case 0:
-        animal = "monkey"
 print(str(year) + " is year of " + color_year + " " + animal)
