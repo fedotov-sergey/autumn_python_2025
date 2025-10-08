@@ -21,6 +21,61 @@
 # start_year: int = 1984
 # start_color: str = colors[0]
 # input_year: int = int(input('Введите ваш год'))
+# Bad Solution
+# year = int(input("Enter year: "))
+# match year % 10:
+#     case 0 | 1:
+#         color_year = "white"
+#     case 2 | 3:
+#         color_year = "black"
+#     case 4 | 5:
+#         color_year = "green"
+#     case 6 | 7:
+#         color_year = "red"
+#     case 8 | 9:
+#         color_year = "yellow"
+# match year % 12:
+#     case 0:
+#         animal = "monkey"
+#     case 1:
+#         animal = "cock"
+#     case 2:
+#         animal = "dog"
+#     case 3:
+#         animal = "pig"
+#     case 4:
+#         animal = "rat"
+#     case 5:
+#         animal = "bull"
+#     case 6:
+#         animal = "tiger"
+#     case 7:
+#         animal = "rabbit"
+#     case 8:
+#         animal = "dragon"
+#     case 9:
+#         animal = "snake"
+#     case 10:
+#         animal = "horse"
+#     case 11:
+#         animal = "goat"
+# print(str(year) + " is year of " + color_year + " " + animal)
+# Optimal
+animals = [
+    "monkey",
+    "cock",
+    "dog",
+    "pig",
+    "rat",
+    "bull",
+    "tiger",
+    "rabbit",
+    "dragon",
+    "snake",
+    "horse",
+    "goat",
+]
+
 year = int(input("Enter year: "))
 match year % 10:
     case 0 | 1:
@@ -33,29 +88,5 @@ match year % 10:
         color_year = "red"
     case 8 | 9:
         color_year = "yellow"
-match year % 12:
-    case 0:
-        animal = "monkey"
-    case 1:
-        animal = "cock"
-    case 2:
-        animal = "dog"
-    case 3:
-        animal = "pig"
-    case 4:
-        animal = "rat"
-    case 5:
-        animal = "bull"
-    case 6:
-        animal = "tiger"
-    case 7:
-        animal = "rabbit"
-    case 8:
-        animal = "dragon"
-    case 9:
-        animal = "snake"
-    case 10:
-        animal = "horse"
-    case 11:
-        animal = "goat"
-print(str(year) + " is year of " + color_year + " " + animal)
+
+print(f"{year} is year of {color_year} {animals[year % 12]}")
