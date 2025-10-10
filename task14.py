@@ -2,16 +2,16 @@
 # Одинаковых значение может быть два и более !
 # Пример:
 mass = [1, 2, 17, 54, 30, 89, 2, 1, 6, 2]
-number: int = int(input("Введите число для которого будет искаться расстояние"))
-len_ = len(mass)
-number_ = 0
-i = int(input("Start index"))
-for i in range(len_):
+number: int = int(input("Введите число для которого будет искаться расстояние "))
+distance = 0
+for i in range(len(mass)):
     if mass[i] == number:
-        number_ = number_ + 1
-    else:
-        number_ = number_
-print(number_)
+        while mass[i] != number:
+            distance += 1
+        else
+            continue
+
+print(distance)
 # Для числа 1 минимальное растояние в массиве по индексам: 0 и 7
 # Для числа 2 минимальное растояние в массиве по индексам: 6 и 9
 # Для числа 17 нет минимального растояния т.к элемент в массиве один.

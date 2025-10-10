@@ -1,5 +1,6 @@
 # todo: База данных пользователя.
 # Задан массив объектов пользователя
+from unittest import case
 
 users = [
     {"login": "Piter", "age": 23, "group": "admin"},
@@ -15,24 +16,37 @@ users = [
 # 2. По первой букве
 # 3. По группе
 
-print(
-    """По какому параметру будем искать?
+num = int(
+    input(
+        """По какому параметру будем искать?
 1. По возрасту
 2. По первой букве
-3. По группе"""
+3. По группе
+"""
+    )
 )
-i = 0
-parametr = int(input("Введите число"))
-match parametr:
+match num:
     case 1:
-        age = int(input("Введите возрастной порог"))
-        while i != len(users):
-            if users[i]["age"] >= age:
-                print(users[i]["age"])
+        age = int(input("Порог возраста: "))
+        for i in range(len(users)):
+            if users[i]["age"] < age:
+                continue
             else:
-                i = i + 1
-            if i == len(users):
-                break
+                print(f'Пользователь: {users[i]["login"]} возраст {users[i]["age"]} , группа {users[i]["group"]}')
+    case 2:
+        first_letter = input("Первая буква: ")
+        for i in range(len(users)):
+            if first_letter not in users[i]["login"]:
+                continue
+            else:
+                print(f'Пользователь: {users[i]["login"]} возраст {users[i]["age"]} , группа {users[i]["group"]}')
+    case 3:
+        group = input("Имя группы: ")
+        for i in range(len(users)):
+            if group in users[i]["group"]:
+                print(f'Пользователь: {users[i]["login"]} возраст {users[i]["age"]} , группа {users[i]["group"]}')
+            else:
+                continue
 
 
 # тип сортировки: 1
