@@ -28,23 +28,23 @@ num = int(
 match num:
     case 1:
         age = int(input("Порог возраста: "))
-        for i in range(len(users)):
-            if users[i]["age"] < age:
+        for user in users:
+            if user["age"] < age:
                 continue
             else:
-                print(f'Пользователь: {users[i]["login"]} возраст {users[i]["age"]} , группа {users[i]["group"]}')
+                print(f'Пользователь: {user["login"]} возраст {user["age"]} , группа {user["group"]}')
     case 2:
         first_letter = input("Первая буква: ")
-        for i in range(len(users)):
-            if first_letter not in users[i]["login"]:
+        for user in users:
+            if first_letter not in user["login"]:
                 continue
             else:
-                print(f'Пользователь: {users[i]["login"]} возраст {users[i]["age"]} , группа {users[i]["group"]}')
+                print(f'Пользователь: {user["login"]} возраст {user["age"]} , группа {user["group"]}')
     case 3:
         group = input("Имя группы: ")
-        for i in range(len(users)):
-            if group in users[i]["group"]:
-                print(f'Пользователь: {users[i]["login"]} возраст {users[i]["age"]} , группа {users[i]["group"]}')
+        for user in users:
+            if group in user["group"]:
+                print(f'Пользователь: {user["login"]} возраст {user["age"]} , группа {user["group"]}')
             else:
                 continue
 

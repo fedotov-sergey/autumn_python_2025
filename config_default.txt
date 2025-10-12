@@ -1,0 +1,16 @@
+#Конфигурация приложения.
+app_name    = test
+version     = test
+debug       = test
+
+#Настройки базы данных
+db_host     = test
+db_port     = test
+db_name     = test
+db_user     = test
+db_password = test
+
+#Настройки API
+api_key     = test
+api_secret  = test
+base_url    = test

@@ -18,9 +18,6 @@
 #         "свиньи",
 #     ]
 #     colors: list[str] = ["зеленый", "красный", "желтый", "белый", "черный"]
-# start_year: int = 1984
-# start_color: str = colors[0]
-# input_year: int = int(input('Введите ваш год'))
 # Bad Solution
 # year = int(input("Enter year: "))
 # match year % 10:
