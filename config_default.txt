@@ -1,16 +1,16 @@
 #Конфигурация приложения.
-app_name    = test
-version     = test
-debug       = test
+app_name    = 9gag
+version     = 1.3.3.7
+debug       = True
 
 #Настройки базы данных
-db_host     = test
-db_port     = test
-db_name     = test
-db_user     = test
-db_password = test
+db_host     = localhost
+db_port     = 5389
+db_name     = gag
+db_user     = admin
+db_password = secretpass
 
 #Настройки API
-api_key     = test
-api_secret  = test
-base_url    = test
+api_key     = 9gagkey
+api_secret  = secretgag
+base_url    = https://9gag.com
