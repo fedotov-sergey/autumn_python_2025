@@ -26,6 +26,6 @@ class User:
 
 user = User("test@example.com", "secret")
 print(user.email)  # test@example.com
-#print(user.password)  # AttributeError
+# print(user.password)  # AttributeError
 print(user.check_password("secret"))  # True
 print(user.check_password("wrong"))  # False
