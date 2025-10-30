@@ -1,0 +1,15 @@
+{
+    "time": "2025-10-30T20:39:40.885130",
+    "data": [
+        {
+            "product": "Laptop",
+            "price": 1000,
+            "quantity": 2
+        },
+        {
+            "product": "Mouse",
+            "price": 50,
+            "quantity": 10
+        }
+    ]
+}
